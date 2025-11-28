@@ -13,7 +13,11 @@ namespace BuggyApp.Controllers
         {
 
             List<Item> items = new List<Item>();
-
+{
+    new Item { Name = "Laptop", Price = 999.99 },
+    new Item { Name = "Mouse", Price = 25.50 },
+    new Item { Name = "Keyboard", Price = 45.00 }
+};
 
             if (items.Count == 0)
             {
