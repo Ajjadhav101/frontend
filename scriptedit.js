@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     fetch('/api/invoice')
         .then(resp => resp.json()({
-  "items": [
-    { "name": "Laptop", "price": 999.99 },
-    { "name": "Mouse", "price": 25.50 }
-  ]
+  "items": items: [
+        { name: "Laptop", price: 999.99 },
+        { name: "Mouse", price: 25.50 },
+        { name: "Keyboard", price: 45.00 }
+    ]
 }
         .then(data => {
             let html = '<ul>';
